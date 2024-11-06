@@ -1,18 +1,16 @@
-<template>
-  <h1>{{ message }}</h1>
-  <p>{{ test.split('').reverse().join('') }}</p>
-  <div v-bind:class="a">test
-  </div>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      message: 'Hello Vue',
-      test:'test',
-      a:'?'
-    };
-  }
-}
+<script setup>
+import hello from './components/hello.vue';
+import ifvue from './components/if.vue';
+import listD from './components/list.vue';
+import click from './components/click.vue';
+import tabtst from './components/tabs.vue'
 </script>
+
+<template>
+  <!-- <hello/>
+  <ifvue/>
+  <listD/> -->
+  <!-- <click/> -->
+  <!-- <tabs-test/> -->
+  <tabtst/>
+</template>
